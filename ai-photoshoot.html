@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8"/>
+    <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Increase photo resolution</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+            rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload"
+            as="image"
+            href="assets/images/aHeroBlur.webp"
+            imagesrcset="assets/images/aheroBlurMobile.webp 576w, assets/images/aHeroBlur.webp 1160w"
+    />
+
+    <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/zurb-twentytwenty@0.1.1/css/twentytwenty.min.css"
+    />
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <div class="container">
+            <div class="header-body G-justify-between">
+                <a class="header-logo G-flex" href="index.html">
+                    <picture>
+                        <source
+                                srcset="assets/images/logoMobile.svg"
+                                media="(max-width: 576px)"
+                                type="image/svg+xml"
+                        />
+                        <img
+                                src="assets/images/logo.svg"
+                                alt="Company logo"
+                                width="28"
+                                height="28"
+                                loading="eager"
+                                fetchpriority="high"
+                                decoding="async"
+                        />
+                    </picture>
+                </a>
+                <nav class="menu">
+                    <div class="menu-wrapper">
+                        <ul>
+                            <li>
+                                <a class="menu-list-link" href="#howWork">Как работает</a>
+                            </li>
+                            <li>
+                                <a class="menu-list-link" href="#possibilities"
+                                >Возможности</a
+                                >
+                            </li>
+                            <li>
+                                <a class="menu-list-link" href="#reviews">Отзывы</a>
+                            </li>
+                            <li>
+                                <a class="menu-list-link" href="#faq">FAQ</a>
+                            </li>
+                        </ul>
+
+                        <div class="menu-mobile-actions">
+                            <a
+                                    href="https://nexa.ru/sign-up"
+                                    target="_blank"
+                                    class="btn-login G-align-center"
+                            >
+                    <span class="login-btn-bg G-center">
+                      <i class="icon icon-person"></i>
+                    </span>
+                                <span class="login-btn-text">Войти</span>
+                            </a>
+
+                            <a
+                                    href="https://nexa.ru/sign-up"
+                                    target="_blank"
+                                    class="btn-register G-align-center"
+                            >
+                    <span class="register-btn-bg G-center">
+                      <i class="icon icon-person-edit"></i>
+                    </span>
+                                <span class="register-btn-text">Регистрация</span>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+                <div class="menu-bg"></div>
+
+                <div class="header-actions G-align-center">
+                    <a
+                            href="https://nexa.ru/sign-up"
+                            target="_blank"
+                            class="btn-login G-align-center"
+                    >
+                <span class="login-btn-bg G-center">
+                  <i class="icon icon-person"></i>
+                </span>
+                        <span class="login-btn-text">Войти</span>
+                    </a>
+
+                    <a
+                            href="https://nexa.ru/sign-up"
+                            target="_blank"
+                            class="btn-register G-align-center"
+                    >
+                <span class="register-btn-bg G-center">
+                  <i class="icon icon-person-edit"></i>
+                </span>
+                        <span class="register-btn-text">Регистрация</span>
+                    </a>
+
+                    <div class="burger-bg G-center">
+                        <div class="burger">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="ai-photoshoot" class="ai-photoshoot-main">
+            <div class="container">
+                <div class="ai-photoshoot-rel">
+                    <div class="photoshoot-cont-pic G-flex fade-bottom">
+                        <img src="./assets/images/photoshoot-cont.png" alt="photoshoot" loading="lazy">
+                    </div>
+                    <div class="t-hero-titles ai-photoshoot-title G-flex-column G-align-center">
+                        <div class="easy-access-ru G-align-center fade-top">
+                            <img src="./assets/images/ru.png" alt="ru" loading="lazy">
+                            <span>Удобный доступ <b>из любой точки России</b></span>
+                        </div>
+                        <p class="fade-top">Создавайте AI-фотосессии из своих фото прямо в браузере</p>
+                        <h1 class="fade-top">
+                            ИИ-фотосессия
+                            <br>за минуты
+                        </h1>
+                        <p class="fade-bottom">
+                            Примерьте 100 образов за один вечер. <br> От фото для паспорта до креативного снимка
+                        </p>
+
+                        <div class="created-today-flex G-align-center fade-bottom">
+                            <div class="created-today-user G-flex">
+                                <img src="./assets/images/created-today.png" alt="created" loading="lazy">
+                            </div>
+                            <span class="created-today-count G-align-center">
+                                <span class="circle-green"></span>
+                                <strong>1 394 фото</strong> создано сегодня
+                            </span>
+                        </div>
+
+                        <div class="view-styles-flex G-center fade-bottom">
+                            <a href="https://nexa.ru/sign-up" target="_blank"
+                               class="black-btn a-hero-btn">
+                          <span class="black-btn-bg G-center">
+                            <i class="icon icon-stars"></i>
+                          </span>
+                                <span class="black-btn-text">Сделать фото бесплатно</span>
+                            </a>
+                            <a href="#" class="view-styles-btn">
+                               <span class="view-styles-arrow">
+                                   <i class="icon view-arrow-right"></i>
+                               </span>
+                                Смотреть стили
+                            </a>
+
+                        </div>
+                        <div class="fast-installations G-align-center fade-bottom">
+                            <span class="section-clue">Быстро и <b>без установок</b></span>
+                            <span class="section-clue"><b>Сохранение</b> черт лица</span>
+                            <span class="section-clue">Экспорт <b>в высоком качестве</b></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ai-photoshoot-mobile">
+                <img src="./assets/images/ai-phot-mob.webp" alt="phot" loading="lazy">
+            </div>
+            <div class="ai-photoshoot-slider">
+                <div class="ai-photoshoot-swiper swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="generation-slid-pic G-flex">
+                                <div class="generation-name G-align-center">
+                                    <i class="icon-sta"></i>
+                                    <span>Генерация</span>
+                                </div>
+                                <img src="./assets/images/photoshoot-1.webp" alt="photoshoot" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="generation-slid-pic G-flex">
+                                <div class="generation-name G-align-center">
+                                    <i class="icon-sta"></i>
+                                    <span>Генерация</span>
+                                </div>
+                                <img src="./assets/images/photoshoot-2.webp" alt="photoshoot" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="generation-slid-pic G-flex">
+                                <img src="./assets/images/photoshoot-3.webp" alt="photoshoot" loading="lazy">
+                                <div class="photoshoot-ramka" style="background-image: url('assets/images/photoshoot-ramka.png')">
+
+                                </div>
+                                <div class="your-face-gen">
+                                    <span>Ваше лицо</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="generation-slid-pic G-flex">
+                                <div class="generation-name G-align-center">
+                                    <i class="icon-sta"></i>
+                                    <span>Генерация</span>
+                                </div>
+                                <img src="./assets/images/photoshoot-4.webp" alt="photoshoot" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="generation-slid-pic G-flex">
+                                <div class="generation-name G-align-center">
+                                    <i class="icon-sta"></i>
+                                    <span>Генерация</span>
+                                </div>
+                                <img src="./assets/images/photoshoot-5.webp" alt="photoshoot" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="generation-slid-pic G-flex">
+                                <div class="generation-name G-align-center">
+                                    <i class="icon-sta"></i>
+                                    <span>Генерация</span>
+                                </div>
+                                <img src="./assets/images/photoshoot-6.webp" alt="photoshoot" loading="lazy">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="generation-slid-pic G-flex">
+                                <img src="./assets/images/photoshoot-3.webp" alt="photoshoot" loading="lazy">
+                                <div class="photoshoot-ramka" style="background-image: url('assets/images/photoshoot-ramka.png')">
+
+                                </div>
+                                <div class="your-face-gen">
+                                    <span>Ваше лицо</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="generation-slid-pic G-flex">
+                                <div class="generation-name G-align-center">
+                                    <i class="icon-sta"></i>
+                                    <span>Генерация</span>
+                                </div>
+                                <img src="./assets/images/photoshoot-4.webp" alt="photoshoot" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="generation-slid-pic G-flex">
+                                <div class="generation-name G-align-center">
+                                    <i class="icon-sta"></i>
+                                    <span>Генерация</span>
+                                </div>
+                                <img src="./assets/images/photoshoot-5.webp" alt="photoshoot" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="generation-slid-pic G-flex">
+                                <div class="generation-name G-align-center">
+                                    <i class="icon-sta"></i>
+                                    <span>Генерация</span>
+                                </div>
+                                <img src="./assets/images/photoshoot-6.webp" alt="photoshoot" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="how-work section-margin">
+            <div class="container">
+                <div class="section-big-titles fade-top G-column-center ">
+                    <span class="section-clue">Как работает</span>
+                    <h2>
+                        Всё, что нужно для фото:
+                        <br> вы и ваша идея
+                    </h2>
+                    <p>
+                        Загрузите селфи, выберите стиль, добавьте свои пожелания,
+                        <br> а нейросеть сделает остальное
+                    </p>
+                </div>
+
+                <div class="how-need-idea G-flex-column G-align-center  ">
+                    <div class="need-idea-wrap G-flex-wrap fade-bottom">
+                        <div class="need-idea-boxes">
+                            <span>[ ваше фото ]</span>
+                            <div class="need-idea-photo G-flex">
+                                <img src="./assets/images/idea-1.png" alt="idea" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="need-idea-boxes">
+                            <span>[ стиль ]</span>
+                            <div class="need-idea-photo G-flex">
+                                <img src="./assets/images/idea-2.png" alt="idea" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="need-idea-boxes">
+                            <span>[ запрос ]</span>
+                            <div class="need-idea-text G-center">
+                                <p>Используй моё лицо и мою внешность с предоставленного селфи. Создай изображение в стиле уличной fashion-фотографии. Сохрани реалистичную детализацию, цвет кожи и мой оригинальный цвет волос</p>
+                            </div>
+                        </div>
+                        <div class="need-idea-boxes">
+                            <span>[ результат ]</span>
+                            <div class="need-idea-photo G-flex">
+                                <img src="./assets/images/idea-3.png" alt="idea" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="personal-blog G-center fade-bottom">
+                        <div class="personal-blog-name G-align-center">
+                            <i class="icon-smail"></i>
+                            <p> Для новой аватарки</p>
+                        </div>
+                        <div class="personal-blog-name G-align-center">
+                            <i class="icon-work"></i>
+                            <p> Для работы</p>
+                        </div>
+                        <div class="personal-blog-name G-align-center">
+                            <i class="icon-social-netx"></i>
+                            <p> Для соц.сетей</p>
+                        </div>
+                        <div class="personal-blog-name G-align-center">
+                            <i class="icon-blog"></i>
+                            <p> Для личного блога</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="G-center fade-bottom">
+                    <a href="https://nexa.ru/sign-up" target="_blank"
+                       class="black-btn a-hero-btn">
+                          <span class="black-btn-bg G-center">
+                            <i class="icon icon-stars"></i>
+                          </span>
+                        <span class="black-btn-text">Попробовать бесплатно</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="possibilit-padd section-margin">
+            <div class="container">
+                <div class="section-big-titles fade-top G-column-center ">
+                    <span class="section-clue">Возможности</span>
+                    <h2>
+                        Популярные идеи
+                        <br> для фотосессий
+                    </h2>
+                    <p>
+                        Праздничное настроение, брутальная эстетика или пинтерест-шик?
+                       <br> Посмотрите, какие стили сейчас в тренде!
+                    </p>
+                </div>
+
+                <div class="possibilit-shoot G-flex-wrap fade-bottom">
+                    <a href="#" class="possibilit-boxes">
+                        <img src="./assets/images/possib-1.png" alt="possibilit" loading="lazy">
+                        <div class="possibilit-arrow">
+                            <p>Праздничный торт</p>
+                            <span class="view-styles-arrow">
+                               <i class="icon view-arrow-right"></i>
+                           </span>
+                        </div>
+                    </a>
+                    <a href="#" class="possibilit-boxes">
+                        <span class="possibilit-trend"><i class="icon-fier"></i> Тренд</span>
+                        <img src="./assets/images/possib-2.png" alt="possibilit" loading="lazy">
+                        <div class="possibilit-arrow">
+                            <p>Брутальный взгляд</p>
+                            <span class="view-styles-arrow">
+                               <i class="icon view-arrow-right"></i>
+                           </span>
+                        </div>
+                    </a>
+                    <a href="#" class="possibilit-boxes">
+                        <img src="./assets/images/possib-3.png" alt="possibilit" loading="lazy">
+                        <div class="possibilit-arrow">
+                            <p>Реалистичное селфи</p>
+                            <span class="view-styles-arrow">
+                               <i class="icon view-arrow-right"></i>
+                           </span>
+                        </div>
+                    </a>
+                    <a href="#" class="possibilit-boxes">
+                        <img src="./assets/images/possib-4.png" alt="possibilit" loading="lazy">
+                        <div class="possibilit-arrow">
+                            <p>С шарами-цифрами</p>
+                            <span class="view-styles-arrow">
+                               <i class="icon view-arrow-right"></i>
+                           </span>
+                        </div>
+                    </a>
+                    <a href="#" class="possibilit-boxes">
+                        <img src="./assets/images/possib-5.png" alt="possibilit" loading="lazy">
+                        <div class="possibilit-arrow">
+                            <p>Коллаж трёх ракурсов</p>
+                            <span class="view-styles-arrow">
+                               <i class="icon view-arrow-right"></i>
+                           </span>
+                        </div>
+                    </a>
+                    <a href="#" class="possibilit-boxes">
+                        <span class="possibilit-trend"><i class="icon-fier"></i> Тренд</span>
+
+                        <img src="./assets/images/possib-6.png" alt="possibilit" loading="lazy">
+                        <div class="possibilit-arrow">
+                            <p>Ночной кадр из машины</p>
+                            <span class="view-styles-arrow">
+                               <i class="icon view-arrow-right"></i>
+                           </span>
+                        </div>
+                    </a>
+                    <a href="#" class="possibilit-boxes">
+                        <span class="possibilit-trend"><i class="icon-fier"></i> Тренд</span>
+
+                        <img src="./assets/images/possib-7.png" alt="possibilit" loading="lazy">
+                        <div class="possibilit-arrow">
+                            <p>“Фото на плечах”</p>
+                            <span class="view-styles-arrow">
+                               <i class="icon view-arrow-right"></i>
+                           </span>
+                        </div>
+                    </a>
+                    <a href="#" class="possibilit-boxes">
+                        <img src="./assets/images/possib-8.png" alt="possibilit" loading="lazy">
+                        <div class="possibilit-arrow">
+                            <p>Ч/Б парный снимок</p>
+                            <span class="view-styles-arrow">
+                               <i class="icon view-arrow-right"></i>
+                           </span>
+                        </div>
+                    </a>
+                    <a href="#" class="possibilit-boxes">
+                        <img src="./assets/images/possib-9.png" alt="possibilit" loading="lazy">
+                        <div class="possibilit-arrow">
+                            <p>Old Money</p>
+                            <span class="view-styles-arrow">
+                               <i class="icon view-arrow-right"></i>
+                           </span>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="G-center fade-bottom">
+                    <a href="#" class="see-more-poss">
+                        Посмотреть ещё →
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="creativity-main section-margin">
+            <div class="container">
+                <div class="section-big-titles fade-top G-column-center">
+                    <span class="section-clue">Креатив</span>
+                    <h2>
+                        Ещё больше идей
+                    </h2>
+                    <p>
+                        Не нашли подходящий вариант? Создайте свой! <br> Опишите любую локацию, наряд, сюжет или атмосферу
+                    </p>
+                </div>
+            </div>
+
+            <div class="creativity-related fade-bottom">
+                <div class="container">
+                    <div class="swiper creativity-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="creativity-photo">
+                                    <img src="./assets/images/related-1.webp" alt="related" loading="lazy">
+                                    <div class="creativity-text">
+                                        <p>
+                                            Портрет пользователя в полный рост, сидящего на простом чёрном складном стуле. Пользователь сидит, элегантно скрестив ноги, левая рука мягко опирается на щёку…
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="creativity-photo">
+                                    <img src="./assets/images/related-2.webp" alt="related" loading="lazy">
+                                    <div class="creativity-text">
+                                        <p>
+                                            Романтический черно-белый студийный портрет пары, стоящей перед стеной, на которую проецируется свет в форме сердца. Пара должна сохранить свои…
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="creativity-photo">
+                                    <img src="./assets/images/related-3.webp" alt="related" loading="lazy">
+                                    <div class="creativity-text">
+                                        <p>
+                                            Гламурный студийный портрет, крупный план, снимок на уровне глаз, на котором изображена женщина с чувственным
+                                            и уверенным выражением…
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="creativity-photo">
+                                    <img src="./assets/images/related-4.webp" alt="related" loading="lazy">
+                                    <div class="creativity-text">
+                                        <p>
+                                            Девушка в норковой шубе, чёрных кожаных перчатках сидит на скамейке в парке. В левой руке она держит открытую стеклянную банку с чёрной икрой…
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="creativity-photo">
+                                    <img src="./assets/images/related-1.webp" alt="related" loading="lazy">
+                                    <div class="creativity-text">
+                                        <p>
+                                            Портрет пользователя в полный рост, сидящего на простом чёрном складном стуле. Пользователь сидит, элегантно скрестив ноги, левая рука мягко опирается на щёку…
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="creativity-photo">
+                                    <img src="./assets/images/related-2.webp" alt="related" loading="lazy">
+                                    <div class="creativity-text">
+                                        <p>
+                                            Романтический черно-белый студийный портрет пары, стоящей перед стеной, на которую проецируется свет в форме сердца. Пара должна сохранить свои…
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="creativity-photo">
+                                    <img src="./assets/images/related-3.webp" alt="related" loading="lazy">
+                                    <div class="creativity-text">
+                                        <p>
+                                            Гламурный студийный портрет, крупный план, снимок на уровне глаз, на котором изображена женщина с чувственным
+                                            и уверенным выражением…
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="creativity-photo">
+                                    <img src="./assets/images/related-4.webp" alt="related" loading="lazy">
+                                    <div class="creativity-text">
+                                        <p>
+                                            Девушка в норковой шубе, чёрных кожаных перчатках сидит на скамейке в парке. В левой руке она держит открытую стеклянную банку с чёрной икрой…
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="enter-query-inp fade-bottom">
+                    <label>
+                        <input type="text" placeholder="Введите свой запрос...">
+                    </label>
+                    <button  class="btn-register black-btn">
+                      <span class="register-btn-bg G-center">
+                        <i class="icon icon-stars"></i>
+                      </span>
+                        <span class="register-btn-text">Сгенерировать</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="ai-reviews-sec section-margin">
+            <div class="container">
+                <div class="section-big-titles fade-top G-column-center ">
+                    <span class="section-clue">Отзывы</span>
+                    <h2>
+                        Реальные результаты
+                        <br>генерации
+                    </h2>
+                </div>
+                <div class="ai-reviews-min fade-bottom">
+                    <div class="swiper ai-reviews-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="ai-reviews-boxes">
+                                    <div class="ai-reviews-photo G-flex">
+                                        <img src="./assets/images/reviews-photo-1.webp" alt="reviews" loading="lazy">
+                                        <div class="generation-name G-align-center">
+                                            <i class="icon-sta"></i>
+                                            <span>Результат пользователя</span>
+                                        </div>
+                                    </div>
+                                    <div class="ai-reviews-info">
+                                        <span>@vewhri</span>
+                                        <p>
+                                            Дочка посмеялась: «мама ты что, с нейросетями?». А я сделала себе фото с шикарным букетом и брутальным видом и сама себе понравилась! 🤩 Теперь муж ревнует. К букету или нет пока непонятно
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="ai-reviews-boxes">
+                                    <div class="ai-reviews-photo G-flex">
+                                        <img src="./assets/images/reviews-photo-2.webp" alt="reviews" loading="lazy">
+                                        <div class="generation-name G-align-center">
+                                            <i class="icon-sta"></i>
+                                            <span>Результат пользователя</span>
+                                        </div>
+                                    </div>
+                                    <div class="ai-reviews-info">
+                                        <span>@marylands23</span>
+                                        <p>
+                                            Мои фотки из галереи — это вечно «лицо мимо кадра» или неудачный ракурс. А тут — прямо кинозвезда! Сделала несколько образов: и нежную, и дерзкую. Подружки просят ссылку на сервис
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="ai-reviews-boxes">
+                                    <div class="ai-reviews-photo G-flex">
+                                        <img src="./assets/images/reviews-photo-3.webp" alt="reviews" loading="lazy">
+                                        <div class="generation-name G-align-center">
+                                            <i class="icon-sta"></i>
+                                            <span>Результат пользователя</span>
+                                        </div>
+                                    </div>
+                                    <div class="ai-reviews-info">
+                                        <span>@alicemalice</span>
+                                        <p>
+                                            Сгенерировала себя с любимым персом из визуальной новеллы, сижу кайфую х) Классно, что есть такие сервисы. Пойду дальше пробовать остальных персонажей из фильмов и сериалов
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="ai-reviews-boxes">
+                                    <div class="ai-reviews-photo G-flex">
+                                        <img src="./assets/images/reviews-photo-4.webp" alt="reviews" loading="lazy">
+                                        <div class="generation-name G-align-center">
+                                            <i class="icon-sta"></i>
+                                            <span>Результат пользователя</span>
+                                        </div>
+                                    </div>
+                                    <div class="ai-reviews-info">
+                                        <span>@alexo2</span>
+                                        <p>
+                                            Думал, это всё девчачьи штучки. Но мне нужно было фото для резюме и соцсетей. Сделал пару вариантов. Выглядит дорого и стильно, никто не поверит, что это нейросеть
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="ai-reviews-boxes">
+                                    <div class="ai-reviews-photo G-flex">
+                                        <img src="./assets/images/reviews-photo-5.webp" alt="reviews" loading="lazy">
+                                        <div class="generation-name G-align-center">
+                                            <i class="icon-sta"></i>
+                                            <span>Результат пользователя</span>
+                                        </div>
+                                    </div>
+                                    <div class="ai-reviews-info">
+                                        <span>@lina19</span>
+                                        <p>
+                                            Амосферное фото, будто я в кино снимаюсь. Смотрю в окно, а в глазах глубина, волосы красиво лежат, всё натурально. Теперь эта аватарка будет жить долго, менять не собираюсь
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="ai-reviews-boxes">
+                                    <div class="ai-reviews-photo G-flex">
+                                        <img src="./assets/images/reviews-photo-6.webp" alt="reviews" loading="lazy">
+                                        <div class="generation-name G-align-center">
+                                            <i class="icon-sta"></i>
+                                            <span>Результат пользователя</span>
+                                        </div>
+                                    </div>
+                                    <div class="ai-reviews-info">
+                                        <span>@d937fk</span>
+                                        <p>
+                                            Тренируюсь уже три года, а нормального фото в зале так и не было, то свет неудачный, то лицо перекошенное 😅
+                                            <br>А тут загрузила селфи, выбрала спорт-стиль и получила такое фото
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="reviews-pagination swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="faq" class="faq-section section">
+            <div class="container">
+                <div class="faq-body">
+                    <div class="section-big-titles fade-bottom G-flex-column G-align-center">
+                        <span class="section-clue">FAQ</span>
+
+                        <h2>Все, что нужно знать <br> о Nexa AI</h2>
+                    </div>
+
+                    <div
+                            id="accordion"
+                            class="faq-items block-cnt G-flex-column fade-bottom"
+                    >
+                        <div class="faq-item">
+                            <div class="faq-item-header link G-align-center">
+                                <h3>
+                                    Как работает Nexa AI?
+                                </h3>
+                                <div class="faq-item-icon G-center">
+                                    <i class="icon icon-arrow"></i>
+                                </div>
+                            </div>
+                            <div class="faq-sub-text submenu">
+                                Всё просто: загружаете свои фото, выбираете стиль, пишете текстовый запрос (какими хотите быть на снимках) и получаете готовую AI-фотосессию. Нейросеть объединяет вашу внешность с описанным образом.
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-item-header G-align-center link">
+                                <h3>
+                                    Какие фото подходят лучше всего?
+                                </h3>
+                                <div class="faq-item-icon G-center">
+                                    <i class="icon icon-arrow"></i>
+                                </div>
+                            </div>
+                            <div class="faq-sub-text submenu">
+                                Чёткие, без смазывания, с разными эмоциями и ракурсами. Не загружайте фото, где лицо закрыто руками, солнцезащитными очками или слишком тёмные снимки — это может снизить качество результата.
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-item-header G-align-center link">
+                                <h3>Что писать в текстовом запросе?</h3>
+                                <div class="faq-item-icon G-center">
+                                    <i class="icon icon-arrow"></i>
+                                </div>
+                            </div>
+                            <div class="faq-sub-text submenu">
+                                Опишите, какими хотите быть: одежду, фон, настроение, детали. Например: «деловой костюм, вид на город, строгий взгляд» или «вечернее платье, розовый фон, лёгкая улыбка». Чем подробнее — тем точнее результат.
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-item-header G-align-center link">
+                                <h3>
+                                    Нужно ли устанавливать приложение?
+                                </h3>
+                                <div class="faq-item-icon G-center">
+                                    <i class="icon icon-arrow"></i>
+                                </div>
+                            </div>
+                            <div class="faq-sub-text submenu">
+                                Nexa AI работает полностью в браузере — на компьютере или телефоне. Ничего скачивать и устанавливать не нужно. Достаточно зайти на сайт, загрузить фото и наслаждаться результатом.
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-item-header G-align-center link">
+                                <h3>Можно ли использовать готовые фото в коммерческих целях?</h3>
+                                <div class="faq-item-icon G-center">
+                                    <i class="icon icon-arrow"></i>
+                                </div>
+                            </div>
+                            <div class="faq-sub-text submenu">
+                                Можно! Все сгенерированные фото можно свободно использовать как для личных целей (соцсети, печать, подарки), так и для коммерческих — реклама, обложки, мерч и другое. Никаких дополнительных разрешений получать не нужно.
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-body">
+                <a class="footer-logo G-flex fade-bottom" href="index.html">
+                    <img
+                            src="assets/images/logoBig.svg"
+                            alt="Company logo"
+                            width="705"
+                            height="180"
+                            loading="eager"
+                            fetchpriority="high"
+                            decoding="async"
+                    />
+                </a>
+
+                <div class="footer-cnt fade-bottom">
+                    <div class="footer-grid G-flex">
+                        <picture>
+                            <source
+                                    srcset="assets/images/footerGridMobile.png"
+                                    media="(max-width: 576px)"
+                                    type="image/png"
+                            />
+                            <img
+                                    src="assets/images/footerGrid.png"
+                                    alt="footer grid"
+                                    width="1160"
+                                    height="491"
+                                    loading="lazy"
+                                    decoding="async"
+                            />
+                        </picture>
+                    </div>
+                    <a
+                            href="https://nexa.ru/sign-up"
+                            target="_blank"
+                            class="white-btn footer-btn"
+                    >
+                <span class="white-btn-bg G-center">
+                  <i class="icon icon-stars"></i>
+                </span>
+                        <span class="white-btn-text">Начать бесплатно</span>
+                    </a>
+
+                    <nav class="footer-menu">
+                        <ul>
+                            <li>
+                                <a class="menu-list-link" href="#howWork">Как работает</a>
+                            </li>
+                            <li>
+                                <a class="menu-list-link" href="#possibilities"
+                                >Возможности</a
+                                >
+                            </li>
+                            <li>
+                                <a class="menu-list-link" href="#reviews">Отзывы</a>
+                            </li>
+                            <li>
+                                <a class="menu-list-link" href="#faq">FAQ</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="footer-policy">
+                        <ul>
+                            <li>
+                                <a href="#">Оферта</a>
+                            </li>
+                            <li>
+                                <a href="#">Политика конфиденциальности</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <p class="footer-text">© 2025 Nexa AI. Все права защищены</p>
+                </div>
+
+                <div class="footer-blur G-flex">
+                    <picture>
+                        <source
+                                srcset="assets/images/footerBlurMobile.webp"
+                                media="(max-width: 576px)"
+                                type="image/webp"
+                        />
+                        <img
+                                src="assets/images/footerBlur.webp"
+                                alt="footerBlur"
+                                width="1160"
+                                height="491"
+                                loading="lazy"
+                                decoding="async"
+                        />
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.event.move/1.3.6/jquery.event.move.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/zurb-twentytwenty@0.1.1/js/jquery.twentytwenty.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="assets/js/swiper.js"></script>
+<script src="assets/js/index.js"></script>
+</body>
+</html>
