@@ -18648,6 +18648,16 @@ footer {
 
 
 
+@media (min-width: 2020px){
+  .ai-photoshoot-main:before{
+    left: 0;
+    max-width: 100%;
+    height: 100%;
+    transform: unset;
+    background-image: url("assets/images/ai-photos-BG.webp");
+  }
+}
+
 
 
 .ai-photoshoot-rel{
